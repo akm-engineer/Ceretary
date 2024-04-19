@@ -24,12 +24,12 @@ const Calculate = () => {
     <>
       <div className="bg-[#f8f9fb] p-8 flex flex-col items-center justify-center">
         <div className="pt-6">
-          <h1 className="font-signature font-bold text-3xl">
+          <h1 className="font-signature font-bold text-3xl text-center">
             ESTIMATE EARNING POTENTIAL
           </h1>
         </div>
         <div className="flex  justify-center">
-          <div className="w-[866px]  p-4 rounded flex">
+          <div className="md:w-[866px]  p-4 rounded flex flex-col md:flex-row items-center justify-center">
             <div className="flex flex-col w-2/3 mr-8">
               <label htmlFor="influencerType" className="mb-2 pt-6 pb-2">
                 <p className="pt-6 font-signature text-xl">
@@ -75,16 +75,16 @@ const Calculate = () => {
               </p>
             </div>
             <div className="flex flex-col w-1/3 pt-2">
-              <div className="flex items-center justify-center flex-col">
-                <p className="text-2xl font-signature font-semibold pt-20">
+              <div className="flex items-center justify-center md:flex-col">
+                <p className="text-2xl font-signature font-semibold md:pt-20">
                   Monthly Income
                 </p>
                 <p className="text-[#4A508E] text-4xl font-signature font-semibold">
                   ₹ {monthlyIncome}
                 </p>
               </div>
-              <div className="flex items-center justify-center flex-col pt-24">
-                <p className="text-2xl font-signature font-semibold pt-16">
+              <div className="flex items-center justify-center md:flex-col md:pt-24">
+                <p className="text-2xl font-signature font-semibold md:pt-16">
                   Yearly Earning
                 </p>
                 <p className="text-[#4A508E] text-4xl font-signature font-semibold ">
