@@ -30,7 +30,7 @@ const Calculate = () => {
         </div>
         <div className="flex  justify-center">
           <div className="md:w-[866px]  p-4 rounded flex flex-col md:flex-row items-center justify-center">
-            <div className="flex flex-col w-2/3 mr-8">
+            <div className="flex flex-col md:w-2/3 mr-8">
               <label htmlFor="influencerType" className="mb-2 pt-6 pb-2">
                 <p className="pt-6 font-signature text-xl">
                   What kind of influencer are you
@@ -74,8 +74,8 @@ const Calculate = () => {
                 Products: {products}
               </p>
             </div>
-            <div className="flex flex-col w-1/3 pt-2">
-              <div className="flex items-center justify-center md:flex-col">
+            <div className="flex md:flex-col items-center gap-10 justify-between md:w-1/3 pt-2">
+              <div className="flex items-center justify-center flex-col">
                 <p className="text-2xl font-signature font-semibold md:pt-20">
                   Monthly Income
                 </p>
@@ -83,7 +83,7 @@ const Calculate = () => {
                   ₹ {monthlyIncome}
                 </p>
               </div>
-              <div className="flex items-center justify-center md:flex-col md:pt-24">
+              <div className="flex items-center justify-center flex-col md:pt-18">
                 <p className="text-2xl font-signature font-semibold md:pt-16">
                   Yearly Earning
                 </p>
