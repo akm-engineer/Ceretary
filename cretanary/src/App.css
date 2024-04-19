@@ -1,0 +1,31 @@
+/* App.css */
+
+.app-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.blur-container {
+  position: relative;
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+}
+
+.blur-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Adjust the background color and opacity */
+}
+
+.blur-container > * {
+  position: relative;
+  z-index: 1;
+}
